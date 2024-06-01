@@ -59,6 +59,7 @@ def remove_background(img):
     res = resizeImage(result, max_width, max_height)
     return res
 
+
 def matToHSV(img):
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     hue, saturation, value = cv2.split(hsv)
